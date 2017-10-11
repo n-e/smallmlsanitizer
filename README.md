@@ -12,7 +12,7 @@ project.
 ## Compiling
 
 No compiling is needed, and the precompiled grammar file is available as
-validator.js.
+sanitizer.js.
 
 There are no dependencies except for node.
 
