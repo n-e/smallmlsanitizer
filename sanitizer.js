@@ -161,8 +161,8 @@ function peg$parse(input, options) {
       peg$c17 = function(n) {return n},
       peg$c18 = "</",
       peg$c19 = peg$literalExpectation("</", false),
-      peg$c20 = /^[bui]/,
-      peg$c21 = peg$classExpectation(["b", "u", "i"], false, false),
+      peg$c20 = /^[buis]/,
+      peg$c21 = peg$classExpectation(["b", "u", "i", "s"], false, false),
       peg$c22 = "tt",
       peg$c23 = peg$literalExpectation("tt", false),
       peg$c24 = /^[\0-\x1F\x7F]/,
@@ -625,9 +625,6 @@ function peg$parse(input, options) {
         s0 = peg$parseAmp();
         if (s0 === peg$FAILED) {
           s0 = peg$parseGT();
-          if (s0 === peg$FAILED) {
-            s0 = peg$parseQuot();
-          }
         }
       }
     }

@@ -20,7 +20,7 @@ TagName = [buis] / "tt"
 
 /* CHARACTERS */
 BodyChar      = BodyAllowedChar / ControlChar / Amp / LT / GT
-UrlInAttrChar = UrlInAttrAllowedChar / ControlChar / Amp      / GT / Quot
+UrlInAttrChar = UrlInAttrAllowedChar / ControlChar / Amp      / GT
 
 ControlChar = [\0-\x1F\x7F] {return ' '}
 Amp = '&' { return '&amp;' }
