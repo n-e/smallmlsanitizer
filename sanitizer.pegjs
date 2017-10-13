@@ -28,4 +28,4 @@ LT = '<' { return '&lt;' }
 GT = '>' { return '&gt;' }
 Quot = '"' { return '&quot;' }
 BodyAllowedChar      = [^\0-\x1F\x7F<>&]
-UrlInAttrAllowedChar = [^\0-\x1F\x7F<>&" ,[]
+UrlInAttrAllowedChar = [^\0-\x1F\x7F<>&" ,[)]

@@ -178,8 +178,8 @@ function peg$parse(input, options) {
       peg$c34 = function() { return '&quot;' },
       peg$c35 = /^[^\0-\x1F\x7F<>&]/,
       peg$c36 = peg$classExpectation([["\0", "\x1F"], "\x7F", "<", ">", "&"], true, false),
-      peg$c37 = /^[^\0-\x1F\x7F<>&" ,[]/,
-      peg$c38 = peg$classExpectation([["\0", "\x1F"], "\x7F", "<", ">", "&", "\"", " ", ",", "["], true, false),
+      peg$c37 = /^[^\0-\x1F\x7F<>&" ,[)]/,
+      peg$c38 = peg$classExpectation([["\0", "\x1F"], "\x7F", "<", ">", "&", "\"", " ", ",", "[", ")"], true, false),
 
       peg$currPos          = 0,
       peg$savedPos         = 0,
